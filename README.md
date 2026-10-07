@@ -23,32 +23,6 @@ A simple and clean Notes App built with Flutter as part of a Flutter internship 
 * Flutter SDK
 * Dart SDK
 
-### Installation
-
-Clone the repository:
-
-```bash
-git clone <https://github.com/delsa-davis/Notes_App>
-```
-
-Navigate to the project directory:
-
-```bash
-cd Notes_App
-```
-
-Install the required dependencies:
-
-```bash
-flutter pub get
-```
-
-Run the application:
-
-```bash
-flutter run
-```
-
 ## Project Structure
 
 ```text
