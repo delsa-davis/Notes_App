@@ -3,28 +3,39 @@ import 'package:flutter/material.dart';
 import 'controllers/notes_controller.dart';
 import 'screens/home_screen.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  final controller = NotesController();
-  await controller.load();
-  runApp(NotesApp(controller: controller));
+void main() {
+  runApp(NotesApp());
 }
 
-class NotesApp extends StatelessWidget {
+class NotesApp extends StatefulWidget {
   final NotesController controller;
 
-  const NotesApp({super.key, required this.controller});
+  NotesApp({super.key, NotesController? controller})
+      : controller = controller ?? NotesController();
+
+  @override
+  State<NotesApp> createState() => _NotesAppState();
+}
+
+class _NotesAppState extends State<NotesApp> {
+  @override
+  void initState() {
+    super.initState();
+    if (widget.controller.isLoading) {
+      widget.controller.load();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Notes App',
       debugShowCheckedModeBanner: false,
+      title: 'Notes App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: HomeScreen(controller: controller),
+      home: HomeScreen(controller: widget.controller),
     );
   }
 }
