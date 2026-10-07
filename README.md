@@ -1,17 +1,60 @@
-# notes_app
+# Notes App
 
-A new Flutter project.
+A simple and clean Notes App built with Flutter as part of a Flutter internship coding assignment.
+
+## Features
+
+* Create new notes
+* View notes
+* Edit existing notes
+* Delete notes with confirmation
+* Form validation for title and description
+* Empty state when no notes are available
+
+## Tech Stack
+
+* Flutter
+* Dart
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+* Flutter SDK
+* Dart SDK
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone the repository:
+
+```bash
+git clone <https://github.com/delsa-davis/Notes_App>
+```
+
+Navigate to the project directory:
+
+```bash
+cd Notes_App
+```
+
+Install the required dependencies:
+
+```bash
+flutter pub get
+```
+
+Run the application:
+
+```bash
+flutter run
+```
+
+## Project Structure
+
+```text
+lib/
+├── controllers/
+├── models/
+├── screens/
+└── widgets/
+```
