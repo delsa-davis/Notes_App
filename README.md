@@ -1,6 +1,6 @@
 # Notes App
 
-A simple and clean Notes App built with Flutter as part of a Flutter internship coding assignment.
+A simple and modern Notes App built using Flutter and Dart for creating and managing personal notes. The app allows users to quickly add notes with a title and description, view saved notes, edit existing content, and delete notes when they are no longer needed. It also includes input validation and a clear empty state to provide a smooth and intuitive user experience.
 
 ## Features
 
